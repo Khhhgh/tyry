@@ -1,25 +1,30 @@
-echo -e "\e[96m____________________\n\__    ___/   _____/\n  |    |  \_____  \ \n  |    |  /        \ \n  |____| /_______  /\n                 \/\e[0m"
-echo -n "Downloading python3.7.." 
-sudo apt-get update -y &>/dev/null
-sudo add-apt-repository ppa:deadsnakes/ppa -y &>/dev/null
-sudo apt-get update -y &>/dev/null
-sudo apt install python3.7 -y -y &>/dev/null
-sudo apt install python3-pip -y &>/dev/null
-sudo python3.7 -m pip install --upgrade pip &>/dev/null
-echo -e "\rDone download python3.7"
-echo -n "Downloading libraries.." 
-sudo apt-get update -y &>/dev/null
-sudo apt --fix-broken install -y &>/dev/null
-sudo python3.7 -m pip install -U setuptools &>/dev/null
-sudo python3.7 -m pip install -U Pyrogram &>/dev/null
-sudo python3.7 -m pip install -U tgcrypto &>/dev/null
-sudo python3.7 -m pip install redis &>/dev/null
-sudo apt-get install redis-server -y &>/dev/null
-sudo systemctl enable redis-server.service -y &>/dev/null
-echo -e "\rDone download libraries"
-echo -n "Downloading pm2.." 
-curl -sL https://deb.nodesource.com/setup_12.x | sudo bash - &>/dev/null; sudo apt-get update &>/dev/null; sudo apt install nodejs -y &>/dev/null; sudo npm install -g pm2 &>/dev/null
-echo -e "\rDone download pm2"
-echo -n "Downloading Tshake Source.." 
-git clone https://github.com/TshAkEAb/TshakeV2.git &>/dev/null
-echo -e "\rDone Tshake Source"
+b==1.0.0
+beautifulsoup4==4.12.2
+bs4==0.0.1
+certifi==2023.7.22
+charset-normalizer==3.2.0
+colorama==0.4.6
+DateTime==5.2
+dragonxxdlib==1.0.0
+fore==0.1
+gdolib==0.3.1
+HamodyTools==0.0.2
+idna==3.4
+instaloader==4.10
+names==0.3.0
+OneClick==3.0.1
+pafy==0.5.5
+pyfiglet==0.8.post1
+pyshorteners==1.0.1
+pyTelegramBotAPI==4.12.0
+pytz==2023.3
+requests==2.31.0
+six==1.16.0
+soupsieve==2.4.1
+stdiomask==0.0.6
+telebot==0.0.5
+urllib3==2.0.4
+user-agent==0.1.10
+uuid==1.30
+youtube-dl==2021.12.17
+zope.interface==6.0 
